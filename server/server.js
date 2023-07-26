@@ -8,4 +8,9 @@ app.get('/',(req,res) => {
     res.sendFile(path.join(__dirname,'../public/index.html'))
 })
 
-app.listen(4000, () => console.log(`server running on 4000`))
+app.get('/api/cat', (req, res) => {
+    
+    res.status(200).res.send('YOu are soo adorable');
+})
+
+app.listen(4000, () => console.log(`server running on 4000`));
