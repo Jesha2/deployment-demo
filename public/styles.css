@@ -17,6 +17,12 @@ p {
 }
 
 img{
-    width: 50%;
+    width: 70%;
+    display: block; /* Ensures the image behaves like a block-level element */
+  margin: 0 auto;
 
+}
+section{
+    margin: 10px 80px;
+   
 }
