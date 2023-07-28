@@ -1,10 +1,10 @@
 const express = require('express')
-const cors = require('cors')
+//const cors = require('cors')
 const app = express()
-//const path = require('path')
+const path = require('path')
 
 app.use(express.static(`public`))//it will serve all the files under public folder including images,css,js etc
-app.use(cors())
+//app.use(cors())
 app.use(express.json());
 // include and initialize the rollbar library with your access token
 var Rollbar = require('rollbar')
