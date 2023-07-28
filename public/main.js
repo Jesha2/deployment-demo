@@ -1,10 +1,16 @@
 const btn = document.querySelector('button')
 
-const clickHandler = () => alert('The cat name is: Oreo')
+////const clickHandler = () => alert('The cat name is: Oreo')
 
-btn.addEventListener('click', clickHandler)
+//btn.addEventListener('click', clickHandler)
 const getCat = () => {
+    //alert('Hi there')
     axios.get('http://localhost:4000/api/cat')
-        .then(res => alert(res.data));
+        .then(res => {
+            alert('Hi there')
+            alert(res.data)
+        }
+        );
 }
-getCat();
+
+btn.addEventListener('click', getCat)
