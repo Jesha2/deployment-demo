@@ -10,6 +10,49 @@ button {
     border-bottom: 2px solid aqua;
     padding: 10px 20px;
     font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+    
+}
+/* Bouncing effect on hover */
+button.bounce-button:hover {
+    animation: bounce 0.5s;
+  }
+
+/* Hover effect */
+
+   h1:hover,h2:hover ,button:hover{
+    /* display: inline; */
+    color: #008cb3;
+  }
+
+  
+  /* Keyframe animation for bouncing */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); /* Initial and final position, no vertical movement */
+    }
+    40% {
+      transform: translateY(-20px); /* Bounce up */
+    }
+    60% {
+      transform: translateY(-20px); /* Bounce back slightly */
+    }
+  }
+
+/* Pulsating effect on hover */
+button.pulse-button:hover {
+  animation: pulse 1s infinite;
+}
+
+/* Keyframe animation for pulsating */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.2); /* Scale up to 120% size */
+  }
 }
 
 p {

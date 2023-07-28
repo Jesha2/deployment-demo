@@ -27,8 +27,6 @@ app.get('/',(req,res) => {
     }
 })
 
-
-
 app.get('/api/cat', (req, res) => {
 
     try{
